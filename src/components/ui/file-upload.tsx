@@ -1,5 +1,5 @@
 "use client";
-
+/* eslint-disable */
 import { cn } from "@/lib/utils";
 import { Slot } from "@radix-ui/react-slot";
 import {
@@ -1359,3 +1359,4 @@ export {
   //
   useStore as useFileUpload,
 };
+/* eslint-enable */

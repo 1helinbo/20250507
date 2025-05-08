@@ -34,6 +34,12 @@ export const metadata: Metadata = {
     locale: 'zh_CN',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'PDF旋转工具',
+    description: '免费在线旋转PDF文件',
+    images: ['/pdf-ai.png'],
+  },
 };
 
 export default function RootLayout({

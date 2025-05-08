@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { FileUpload, FileUploadDropzone } from "@/components/ui/file-upload";
-import { CloudUpload, RotateCw, X, ZoomIn, ZoomOut } from "lucide-react";
+import { CloudUpload, RotateCw, ZoomIn, ZoomOut } from "lucide-react";
 import { useState, useCallback } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import { PDFDocument, degrees } from "pdf-lib";
@@ -38,7 +38,6 @@ const RotatePdf = () => {
   const [numPages, setNumPages] = useState<number>();
   const [rotation, setRotation] = useState<number[]>([]); // 用于存储每页的旋转角度
   const loadSuccess = async ({ numPages }: { numPages: number }) => {
-    const pdfDoc = await PDFDocument.load(await files[0].arrayBuffer());
     setRotation(new Array(numPages).fill(0));
     setNumPages(numPages);
   };
