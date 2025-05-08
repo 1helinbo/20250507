@@ -1,0 +1,31 @@
+.nav-main {
+  & > a {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+}
+.nav-menu{
+  position: absolute;
+  top: 59px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgb(255, 255, 255);
+  border-top: 1px solid rgb(229, 227, 218);
+  transition: 0.1s;
+  opacity: 0;
+  pointer-events: none;
+  padding: 10px;
+  z-index: 9;
+  &>a{
+    display: block;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+}
+.open{
+  opacity: 1;
+  pointer-events: all;
+}
